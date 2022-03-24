@@ -8,14 +8,12 @@ import warnings
 
 #Data okuması
 def read_exc(data):
-    data = pd.read_excel(data,header = 0)
-    
+    data = pd.read_excel(data,header = 0)   
     return data
+#Nan değerlerin silinmesi    
+def delete_nan(data):   
+    data = data.dropna()               
+    return data
+
+
     
-
-
-
-    
-    
-
-
