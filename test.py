@@ -27,3 +27,8 @@ def delete_nanNum(data):
     
     return data
     
+def delete_zeros(data):
+    
+    data = data[~(data == 0).all(axis=1)]
+    
+    return data
